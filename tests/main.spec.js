@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import calc from '../src/main'
 
-describe('Calculator', function() {
+describe('Calculator', () => {
 
   describe('Smoke tests', () => {
     it('should exists the calc lib', () => {
