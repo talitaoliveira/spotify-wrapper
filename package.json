@@ -8,9 +8,11 @@
     "test:tdd": "mocha tests tests/**/*.spec.js --require babel-register --watch",
     "test:coverage": "nyc npm test",
     "lint": "npx eslint src/*.js",
-    "prepush": "npm run lint"
+    "prepush": "npm run lint && npm run test:coverage"
   },
   "nyc":{
+    "functions": 80,
+    "lines": 80,
     "reporter": ["text", "html"],
     "exclude": ["tests/**"]
   },
