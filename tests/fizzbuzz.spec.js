@@ -25,4 +25,8 @@ Se não for múltiplo de nada, retorna o número
     expect(FizzBuzz(15)).to.be.equal('FizzBuzz')
   })
 
+  it('should return the number when is not multiple of 3 nor 5', () =>{
+    expect(FizzBuzz(7)).to.be.equal(7)
+  })
+
  })
