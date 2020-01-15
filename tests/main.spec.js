@@ -26,7 +26,7 @@ describe('Main', function() {
 
   it('should have a size of 4 when push another value of the array',  () => {
     arr.push(4);
-    console.log(arr.length)
+    expect(arr).to.have.lengthOf(3);
   })
 
   it('should have a size of 3 when pop a value of the array',  () => {
