@@ -1,10 +1,6 @@
 import { expect } from 'chai'
 import calc from '../src/main'
 
-
-// let expect = require('chai').expect;
-// let calc = require('../src/main.js');
-
 describe('Calculator', function() {
 
   describe('Smoke tests', () => {
