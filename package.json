@@ -4,8 +4,8 @@
   "description": "Do curso: [JS com TDD na Prática](https://www.udemy.com/course/js-com-tdd-na-pratica/learn/lecture/7605676#overview)",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests tests/**/*.spec.js",
-    "test:tdd": "mocha tests tests/**/*.spec.js --watch",
+    "test": "mocha tests tests/**/*.spec.js --require babel-register",
+    "test:tdd": "mocha tests tests/**/*.spec.js --require babel-register --watch",
     "lint": "npx eslint src/*.js",
     "prepush": "npm run lint"
   },
@@ -16,6 +16,8 @@
     "@typescript-eslint/eslint-plugin": "^2.15.0",
     "@typescript-eslint/parser": "^2.15.0",
     "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
