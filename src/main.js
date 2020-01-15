@@ -1,14 +1,15 @@
 module.exports = {
-  sum: function() {
-
+  sum: function(num1, num2) {
+    return num1 + num2;
   },
-  sub: function() {
-
+  sub: function(num1, num2) {
+    return num1 - num2;
   },
-  mult: function() {
-
+  mult: function(num1, num2) {
+    return num1 * num2;
   },
-  div: function() {
-
+  div: function(num1, num2) {
+    if(num2 === 0) return 'não é possivel divisão por zero!';
+    return num1 / num2;
   }
 }
