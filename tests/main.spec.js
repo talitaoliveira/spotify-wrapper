@@ -1,48 +1,33 @@
 let expect = require('chai').expect;
+let calc = require('../src/main.js');
 
-describe('Main', function() {
+describe('Calculator', function() {
 
-  let arr;
- 
-  // roda uma vez antes do bloco
-  before(() => {
+  describe('Smoke tests', () => {
+    it('should exists the calc lib', () => {
+      expect(calc).to.exist;
+    })
+
+    it('should exists the method sum', () => {
+      expect(calc.sum).to.exist;
+      expect(calc.sum).to.be.a('function');
+    })
+
+    it('should exists the method sub', () => {
+      expect(calc.sub).to.exist;
+      expect(calc.sub).to.be.a('function');
+    })
+
+    it('should exists the method mult', () => {
+      expect(calc.mult).to.exist;
+      expect(calc.mult).to.be.a('function');
+    })
+    
+    it('should exists the method div', () => {
+      expect(calc.div).to.exist;
+      expect(calc.div).to.be.a('function');
+    })
 
   })
-
-  // roda uma vez antes do bloco
-  after(() => {
-
-  })
-
-  // roda uma vez antes do bloco
-  beforeEach(() => {
-    arr = [1, 2, 3]
-  })
-
-   // roda uma vez antes do bloco
-   afterEach(() => {
-
-  })
-
-  // testar tipos ou se existe (smoke tests)
-  it('should be an array', () => {
-    expect(arr).to.be.a('array')
-  })
-
-  it('should have a size of 4 when push another value of the array',  () => {
-    arr.push(4);
-    expect(arr).to.have.lengthOf(4);
-  })
-
-  it('should have a size of 3 when pop a value of the array',  () => {
-    arr.pop();
-    expect(arr).to.not.include(3)
-  })
-
-  it('should remove the value 3 when use pop a value of the array',  () => {
-    arr.pop();
-    expect(arr).to.have.lengthOf(2);
-  })
-
 
 })
