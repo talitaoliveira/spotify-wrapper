@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests tests/**/*.spec.js",
+    "test:tdd": "mocha tests tests/**/*.spec.js --watch",
     "lint": "npx eslint src/*.js",
     "prepush": "npm run lint"
   },
