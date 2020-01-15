@@ -24,6 +24,11 @@ describe('Main', function() {
 
   })
 
+  // testar tipos ou se existe (smoke tests)
+  it('should be an array', () => {
+    expect(arr).to.be.a('array')
+  })
+
   it('should have a size of 4 when push another value of the array',  () => {
     arr.push(4);
     expect(arr).to.have.lengthOf(4);
